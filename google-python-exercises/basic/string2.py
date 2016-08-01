@@ -17,7 +17,7 @@
 # Return the resulting string.
 def verbing(s):
   # +++your code here+++
-  return
+  #return
 
 
 # E. not_bad
