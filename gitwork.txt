@@ -1,359 +1,3 @@
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (m                                                                                                                                                 aster)
-$ git remote add origin https://github.com/praths007/google-python-exercises.git
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git push -u origin master
-error: src refspec master does not match any.
-error: failed to push some refs to 'https://github.com/praths007/google-python-exercises.git'
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git commit -m master
-On branch master
-
-Initial commit
-
-Untracked files:
-        README.md
-        google-python-exercises/
-
-nothing added to commit but untracked files present
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/praths007/google-python-exercises.git
-git push -u origin masterecho "# google-python-exercises" >> README.md
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git init
-Reinitialized existing Git repository in C:/Users/Prathmesh.Savale/Desktop/git_repo/google-python-exercises/.git/
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git add README.md
-warning: LF will be replaced by CRLF in README.md.
-The file will have its original line endings in your working directory.
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git commit -m "first commit"
-[master (root-commit) 23b1550] first commit
- Committer: Prathmesh Savale <Prathmesh.Savale@mu-sigma.com>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
-warning: LF will be replaced by CRLF in README.md.
-The file will have its original line endings in your working directory.
- 1 file changed, 2 insertions(+)
- create mode 100644 README.md
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git remote add origin https://github.com/praths007/google-python-exercises.git
-fatal: remote origin already exists.
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git push -u origin master
-Counting objects: 3, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 247 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/praths007/google-python-exercises.git
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ vi README.md
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git p
-p4     pull   push
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git p
-p4     pull   push
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git push origin
-warning: push.default is unset; its implicit value has changed in
-Git 2.0 from 'matching' to 'simple'. To squelch this message
-and maintain the traditional behavior, use:
-
-  git config --global push.default matching
-
-To squelch this message and adopt the new behavior now, use:
-
-  git config --global push.default simple
-
-When push.default is set to 'matching', git will push local branches
-to the remote branches that already exist with the same name.
-
-Since Git 2.0, Git defaults to the more conservative 'simple'
-behavior, which only pushes the current branch to the corresponding
-remote branch that 'git pull' uses to update the current branch.
-
-See 'git help config' and search for 'push.default' for further information.
-(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
-'current' instead of 'simple' if you sometimes use older versions of Git)
-
-Everything up-to-date
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-        modified:   README.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-        google-python-exercises/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git add -A
-warning: LF will be replaced by CRLF in README.md.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/LICENSE.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/NOTICE.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1990.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1992.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1994.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1996.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1998.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2000.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2002.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2004.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2006.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2008.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/babynames.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/solution/babynames.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/alice.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/list1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/list2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/mimic.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/small.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/list1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/list2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/mimic.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/string1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/string2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/wordcount.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/string1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/wordcount.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/copyspecial/copyspecial.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/copyspecial/solution/copyspecial.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/copyspecial/xyz__hello__.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/hello.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/animal_code.google.com.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/logpuzzle.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/place_code.google.com.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/solution/logpuzzle.py.
-The file will have its original line endings in your working directory.
-g
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git commit -m "Adding exercises"
-[master warning: LF will be replaced by CRLF in README.md.
-The file will have its original line endings in your working directory.
-8bccdda] Adding exercises
- Committer: Prathmesh Savale <Prathmesh.Savale@mu-sigma.com>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
-warning: LF will be replaced by CRLF in README.md.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/LICENSE.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/NOTICE.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1990.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1992.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1994.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1996.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby1998.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2000.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2002.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2004.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2006.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/baby2008.html.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/babynames.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/babynames/solution/babynames.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/alice.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/list1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/list2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/mimic.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/small.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/list1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/list2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/mimic.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/string1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/string2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/solution/wordcount.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/string1.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/basic/wordcount.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/copyspecial/copyspecial.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/copyspecial/solution/copyspecial.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/copyspecial/xyz__hello__.txt.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/hello.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/animal_code.google.com.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/logpuzzle.py.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/place_code.google.com.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in google-python-exercises/logpuzzle/solution/logpuzzle.py.
-The file will have its original line endings in your working directory.
- 38 files changed, 18143 insertions(+), 1 deletion(-)
- create mode 100644 google-python-exercises/LICENSE.txt
- create mode 100644 google-python-exercises/NOTICE.txt
- create mode 100644 google-python-exercises/babynames/baby1990.html
- create mode 100644 google-python-exercises/babynames/baby1992.html
- create mode 100644 google-python-exercises/babynames/baby1994.html
- create mode 100644 google-python-exercises/babynames/baby1996.html
- create mode 100644 google-python-exercises/babynames/baby1998.html
- create mode 100644 google-python-exercises/babynames/baby2000.html
- create mode 100644 google-python-exercises/babynames/baby2002.html
- create mode 100644 google-python-exercises/babynames/baby2004.html
- create mode 100644 google-python-exercises/babynames/baby2006.html
- create mode 100644 google-python-exercises/babynames/baby2008.html
- create mode 100644 google-python-exercises/babynames/babynames.py
- create mode 100644 google-python-exercises/babynames/solution/babynames.py
- create mode 100644 google-python-exercises/basic/alice.txt
- create mode 100644 google-python-exercises/basic/list1.py
- create mode 100644 google-python-exercises/basic/list2.py
- create mode 100644 google-python-exercises/basic/mimic.py
- create mode 100644 google-python-exercises/basic/small.txt
- create mode 100644 google-python-exercises/basic/solution/list1.py
- create mode 100644 google-python-exercises/basic/solution/list2.py
- create mode 100644 google-python-exercises/basic/solution/mimic.py
- create mode 100644 google-python-exercises/basic/solution/string1.py
- create mode 100644 google-python-exercises/basic/solution/string2.py
- create mode 100644 google-python-exercises/basic/solution/wordcount.py
- create mode 100644 google-python-exercises/basic/string1.py
- create mode 100644 google-python-exercises/basic/string2.py
- create mode 100644 google-python-exercises/basic/wordcount.py
- create mode 100644 google-python-exercises/copyspecial/copyspecial.py
- create mode 100644 google-python-exercises/copyspecial/solution/copyspecial.py
- create mode 100644 google-python-exercises/copyspecial/xyz__hello__.txt
- create mode 100644 google-python-exercises/copyspecial/zz__something__.jpg
- create mode 100644 google-python-exercises/hello.py
- create mode 100644 google-python-exercises/logpuzzle/animal_code.google.com
- create mode 100644 google-python-exercises/logpuzzle/logpuzzle.py
- create mode 100644 google-python-exercises/logpuzzle/place_code.google.com
- create mode 100644 google-python-exercises/logpuzzle/solution/logpuzzle.py
-
-prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
-$ git push origin
-warning: push.default is unset; its implicit value has changed in
-Git 2.0 from 'matching' to 'simple'. To squelch this message
-and maintain the traditional behavior, use:
-
-  git config --global push.default matching
-
-To squelch this message and adopt the new behavior now, use:
-
-  git config --global push.default simple
-
-When push.default is set to 'matching', git will push local branches
-to the remote branches that already exist with the same name.
-
-Since Git 2.0, Git defaults to the more conservative 'simple'
-behavior, which only pushes the current branch to the corresponding
-remote branch that 'git pull' uses to update the current branch.
-
-See 'git help config' and search for 'push.default' for further information.
-(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
-'current' instead of 'simple' if you sometimes use older versions of Git)
-
 Counting objects: 49, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (45/45), done.
@@ -465,4 +109,61 @@ $ git commit -a "modified2"
 fatal: Paths with -a does not make sense.
 
 prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
-$ git commit -a
+$ git status
+On branch practise
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   google-python-exercises/basic/string2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gitwork.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git add *
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git push origin practise
+Everything up-to-date
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -m "modified2"
+[practise warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+565a701] modified2
+ Committer: Prathmesh Savale <Prathmesh.Savale@mu-sigma.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+ 2 files changed, 469 insertions(+), 1 deletion(-)
+ create mode 100644 gitwork.txt
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git push origin practise
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.93 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+To https://github.com/praths007/google-python-exercises.git
+   8bccdda..565a701  practise -> practise
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
