@@ -16,8 +16,17 @@
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 def verbing(s):
+    newstring = ""
+    if len(s) < 3:
+        newstring = s
+    else:
+        if len(s) >= 3:
+            if s[len(s)-3:] == 'ing':
+                newstring = s + 'ly'
+            else:
+                newstring = s + 'ing'
   # +++your code here+++
-  #return
+    return(newstring)
 
 
 # E. not_bad
@@ -29,8 +38,24 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
+    newstring = ""
+    for i in range(0,len(s)):
+        if s[i] == 'n':
+            if s[i:i+3] == 'not':
+                #print(s[i:i+3])
+                j=i
+                for j in range(j,len(s)):
+                    if s[j] == 'b':
+                        if s[j:j+3] == 'bad':
+                            newstring = s[:i] + 'good' + s[j+3:]
+                            
+        #else:
+            #newstring = s
+                            #print(newstring)
+        
+                            
   # +++your code here+++
-  return
+    return(newstring)
 
 
 # F. front_back
@@ -52,26 +77,27 @@ def test(got, expected):
     prefix = ' OK '
   else:
     prefix = '  X '
-  print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
+  
+  print('%s got: %s expected: %s' % (prefix, repr(got), repr(expected)))
 
 
 # main() calls the above functions with interesting inputs,
 # using the above test() to check if the result is correct or not.
 def main():
-  print 'verbing'
+  print ('verbing')
   test(verbing('hail'), 'hailing')
   test(verbing('swiming'), 'swimingly')
   test(verbing('do'), 'do')
 
   print
-  print 'not_bad'
+  print ('not_bad')
   test(not_bad('This movie is not so bad'), 'This movie is good')
   test(not_bad('This dinner is not that bad!'), 'This dinner is good!')
   test(not_bad('This tea is not hot'), 'This tea is not hot')
   test(not_bad("It's bad yet not"), "It's bad yet not")
 
   print
-  print 'front_back'
+  print ('front_back')
   test(front_back('abcd', 'xy'), 'abxcdy')
   test(front_back('abcde', 'xyz'), 'abcxydez')
   test(front_back('Kitten', 'Donut'), 'KitDontenut')
