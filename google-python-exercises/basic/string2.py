@@ -39,6 +39,7 @@ def verbing(s):
 # This dinner is good!
 def not_bad(s):
     newstring = ""
+    foundbadflag = 0
     for i in range(0,len(s)):
         if s[i] == 'n':
             if s[i:i+3] == 'not':
@@ -47,10 +48,12 @@ def not_bad(s):
                 for j in range(j,len(s)):
                     if s[j] == 'b':
                         if s[j:j+3] == 'bad':
+                            foundbadflag = 1
                             newstring = s[:i] + 'good' + s[j+3:]
-                            
-        #else:
-            #newstring = s
+                        
+        
+        if foundbadflag == 0:           
+            newstring = s
                             #print(newstring)
         
                             
