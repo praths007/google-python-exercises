@@ -69,8 +69,33 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-  # +++your code here+++
-  return
+    newstring = ""
+    str1mid = len(a)/2
+    #print(a[:str1mid])
+    str2mid = len(b)/2
+    #print(b[:str2mid])
+   
+    if len(a)%2 == 0 and len(b)%2 == 0:
+        str1mid = int(str1mid)
+        str2mid = int(str2mid)
+        #newstring = a[:str1mid] + b[:str2mid] + a[str1mid:] + b[str2mid:]
+    if len(a)%2 != 0 and len(b)%2 == 0:
+        str1mid = int(str1mid) + 1
+        str2mid = int(str2mid)
+        
+        #newstring = a[:str1mid] + b[:str2mid] + a[str1mid:] + b[str2mid:]
+    if len(a)%2 == 0 and len(b)%2 != 0:
+        str2mid = int(str2mid) + 1
+        str1mid = int(str1mid)
+        
+        #newstring = a[:str1mid] + b[:str2mid] + a[str1mid:] + b[str2mid:]
+    if len(a)%2 != 0 and len(b)%2 != 0:
+        str2mid = int(str2mid) + 1
+        str1mid = int(str1mid) + 1
+    
+    newstring = a[:str1mid] + b[:str2mid] + a[str1mid:] + b[str2mid:]
+    
+    return(newstring)
 
 
 # Simple provided test() function used in main() to print
