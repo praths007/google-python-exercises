@@ -47,11 +47,59 @@ import sys
 
 ###
 
+def helper(filename):
+    hashtab = {}
+    try:
+#    print(filename)
+        f = open(filename,'r')
+        for line in f:
+            words = line.split(' ')
+            for word in words:
+                word=word.lower();
+                if word.isalpha():
+                    try:
+                        if word in hashtab.keys():
+                            hashtab[word] = hashtab[word] + 1
+                        else:
+                            hashtab[word] = 1
+                            
+                    except:
+                        print("adding keys problem")
+        f.close()
+    except:
+        print("unable to open file")
+        
+    return(hashtab)
+#    hashtab = sorted(hashtab.keys())
+#    hashtab = sorted(hashtab)
+    
+    
+def print_top(filename):
+    hashtab = helper(filename)
+    count = 0;
+    for key, value in sorted(hashtab.iteritems(),key=lambda (k,v): (v,k),reverse = True):
+        print(key),
+        print(value)
+        count +=1
+        if count == 20:
+            break
+        
+
+def print_words(filename):
+    hashtab = helper(filename)
+    
+    for words in sorted(hashtab.iterkeys()):
+        print(words),
+        print(hashtab[words])
+#    print(hashtab)
+    
+#    sys.exit(0)
+
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
 def main():
   if len(sys.argv) != 3:
-    print 'usage: ./wordcount.py {--count | --topcount} file'
+    print('usage: ./wordcount.py {--count | --topcount} file')
     sys.exit(1)
 
   option = sys.argv[1]
@@ -61,7 +109,7 @@ def main():
   elif option == '--topcount':
     print_top(filename)
   else:
-    print 'unknown option: ' + option
+    print('unknown option: ' + option)
     sys.exit(1)
 
 if __name__ == '__main__':

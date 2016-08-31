@@ -1,0 +1,169 @@
+Counting objects: 49, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (45/45), done.
+Writing objects: 100% (49/49), 273.20 KiB | 0 bytes/s, done.
+Total 49 (delta 16), reused 0 (delta 0)
+To https://github.com/praths007/google-python-exercises.git
+   23b1550..8bccdda  master -> master
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (master)
+$ git checkout -b practise
+Switched to a new branch 'practise'
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git branch
+  master
+* practise
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git status
+On branch practise
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   google-python-exercises/basic/string2.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -m "modified2"
+On branch practise
+Changes not staged for commit:
+        modified:   google-python-exercises/basic/string2.py
+
+no changes added to commit
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git push origin practise
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/praths007/google-python-exercises.git
+ * [new branch]      practise -> practise
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git diff
+diff --git a/google-python-exercises/basic/string2.py b/google-python-exercises/basic/string2.py
+index c5894ee..e3e14ce 100644
+--- a/google-python-exercises/basic/string2.py
++++ b/google-python-exercises/basic/string2.py
+@@ -17,7 +17,7 @@
+ # Return the resulting string.
+ def verbing(s):
+   # +++your code here+++
+-  return
++  #return
+
+
+ # E. not_bad
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git status
+On branch practise
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   google-python-exercises/basic/string2.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -s
+On branch practise
+Changes not staged for commit:
+        modified:   google-python-exercises/basic/string2.py
+
+no changes added to commit
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -a
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+Aborting commit due to empty commit message.
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -a
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+Aborting commit due to empty commit message.
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -a "modified2"
+fatal: Paths with -a does not make sense.
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git status
+On branch practise
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   google-python-exercises/basic/string2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gitwork.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git add *
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git push origin practise
+Everything up-to-date
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git commit -m "modified2"
+[practise warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+565a701] modified2
+ Committer: Prathmesh Savale <Prathmesh.Savale@mu-sigma.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+warning: LF will be replaced by CRLF in google-python-exercises/basic/string2.py.
+The file will have its original line endings in your working directory.
+ 2 files changed, 469 insertions(+), 1 deletion(-)
+ create mode 100644 gitwork.txt
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
+$ git push origin practise
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.93 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+To https://github.com/praths007/google-python-exercises.git
+   8bccdda..565a701  practise -> practise
+
+prathmesh.savale@LAPSZ3170 MINGW64 ~/Desktop/git_repo/google-python-exercises (practise)
