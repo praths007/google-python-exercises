@@ -41,10 +41,28 @@ def extract_names(filename):
   ['2006', 'Aaliyah 91', Aaron 57', 'Abagail 895', ' ...]
   """
   # +++your code here+++
+  try:
+      f = open(filename,'r')
+#      for lines in f:
+      str1 = '<h3 align="center">Popularity in 1990</h3>'
+      yearmatch = re.search(r'[\w]in[\w]',str1)
+      if yearmatch:
+          print(yearmatch.group())
+         # print lines,
+          
+  except:
+      print("error in opening file")
+          
+  sys.exit(0)
   return
 
 
 def main():
+    filename = sys.argv[2]
+    print(filename)
+    extract_names(filename)
+    
+'''
   # This command-line parsing code is provided.
   # Make a list of command line arguments, omitting the [0] element
   # which is the script itself.
@@ -63,6 +81,6 @@ def main():
   # +++your code here+++
   # For each filename, get the names, then either print the text output
   # or write it to a summary file
-  
+'''
 if __name__ == '__main__':
   main()
