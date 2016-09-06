@@ -8,6 +8,7 @@
 
 import sys
 import re
+import glob
 
 """Baby Names exercise
 
@@ -35,26 +36,36 @@ Suggested milestones for incremental development:
 """
 
 def extract_names(filename):
-  """
-  Given a file name for baby.html, returns a list starting with the year string
-  followed by the name-rank strings in alphabetical order.
-  ['2006', 'Aaliyah 91', Aaron 57', 'Abagail 895', ' ...]
-  """
+    filenames = glob.glob("*.html")
+
   # +++your code here+++
-  try:
-      f = open(filename,'r')
-#      for lines in f:
-      str1 = '<h3 align="center">Popularity in 1990</h3>'
-      yearmatch = re.search(r'[\w]in[\w]',str1)
-      if yearmatch:
-          print(yearmatch.group())
-         # print lines,
-          
-  except:
-      print("error in opening file")
-          
-  sys.exit(0)
-  return
+      
+    for files in filenames:
+        finallist = []
+        f = open(files,'r')
+        
+        for lines in f:
+            yearmatch = re.search(r'(Popularity in) (\d\d\d\d)',lines)
+            ranknamematch = re.search(r'(<tr align="right"><td>)(\d)(</td><td>)(\w+)(</td><td>)(\w+)(</td>)',lines)
+            if yearmatch:
+    #            print(yearmatch.group(2))
+                finallist.append(yearmatch.group(2))
+            if ranknamematch:   
+    #            print(ranknamematch.group(2)+" "+ranknamematch.group(4)+" "+ranknamematch.group(6))
+                finallist.append(ranknamematch.group(4)+" "+ranknamematch.group(2))
+            
+            
+    #        if ranknamematch.group(4) in hashtab.keys():
+    #            hashtab[ranknamematch.group(4)] = hashtab[ranknamematch.group(4)] + 1
+    #        else:
+    #            hashtab[ranknamematch.group(4)] = 1
+    #    
+                
+        if yearmatch:
+            print(yearmatch.group())
+            
+            
+        print(sorted(finallist))
 
 
 def main():
